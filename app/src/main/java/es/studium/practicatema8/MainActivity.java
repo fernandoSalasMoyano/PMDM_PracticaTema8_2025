@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 int bateria = obtenerBateria();
                 Log.d(String.valueOf(this), "Ubicación obtenida: " + latitud + ", " + longitud + ", Batería: " + bateria);
                 ayudanteBD.insertarUbicacion(latitud, longitud, bateria);
-                Toast.makeText(this, "Ubicación guardada: " + latitud + " " + longitud + " " + bateria, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Ubicación guardada: " + latitud + " " + longitud + " Batería: " + bateria, Toast.LENGTH_LONG).show();
                 cargarMarcadores();
             }
             else {
